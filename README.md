@@ -13,8 +13,8 @@ Dark Mode            |  Light-Mode
  ### Mobile~
 ![mobile-dark](https://user-images.githubusercontent.com/44196940/165725375-20dbae75-63d3-48bb-8dd5-8a9fa324f584.PNG)![mobile-light](https://user-images.githubusercontent.com/44196940/165725406-a145082f-402e-4c85-b42f-c3a83787bd80.PNG)
 
- ### Mobile~!
- [alert-2](https://user-images.githubusercontent.com/44196940/165725460-305db4e1-c1f5-4c30-9a27-cf44e6f337fa.PNG)
+ ### Alert
+ ![alert-2](https://user-images.githubusercontent.com/44196940/165725460-305db4e1-c1f5-4c30-9a27-cf44e6f337fa.PNG)
 ![alert-1](https://user-images.githubusercontent.com/44196940/165725468-edefeb8e-794f-413c-981f-ff41c6903445.PNG)
 
 
