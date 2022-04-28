@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --lm-bg: #F6F8FF;
+    --lm-bg-content: #FEFEFE;
+    --lm-text: #4B6A9B;
+    --lm-text-alt: #2B3442;
+    --lm-shadow-active: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079FF;
+    --btn-hover: #60ABFF;
+
+
+
+    --ld-bg: #141D2F;
+    --ld-bg-content: #1E2A47;
+    --ld-text: white;
+    --ld-text-alt: white;
+    --ld-shadow-xl: rgba(70, 88, 109, 0.15);
+    --ld-icon-bg: brightness(1000%);
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 0.8fr 5fr;
+    max-width: 55ch;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: 5em;
+}
+
+.container__top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.mode {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.container__search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 0.8em;
+    border-radius: 20px;
+    
+    box-shadow: var(--lm-shadow-inactive);
+}
+
+::placeholder {
+    color: #4B6A9B;
+    /* Firefox */
+    font-size: 1rem;
+
+    font-family: 'Space Mono', monospace;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    font-size: 1rem;
+
+    font-family: 'Space Mono', monospace;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+    font-size: 1rem;
+
+    font-family: 'Space Mono', monospace;
+}
+
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.search {
+    font-family: 'Space Mono', monospace;
+    background-color: #0079FF;
+    border: 0;
+    padding-inline: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search:active {
+    background-color: #408ce2;
+}
+
+.container__bottom {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1.2fr 1.5fr;
+    margin-top: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: var(--lm-shadow-inactive);
+}
+
+.user {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+}
+
+.avatar {
+    width: 25%;
+    border-radius: 100%;
+    height: auto;
+
+}
+
+.user__name {
+    color: #0079FF;
+}
+
+.bio {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.act__info {
+    width: 100%;
+    background-color: #141D2F;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.act__info span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container__social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 1em;
+    -webkit-column-gap: 2em;
+    align-items: center;
+}
+
+.mode__name {
+    font-weight: 700;
+}
+
+.mode__button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.container__social img {
+    width: 0.8em;
+    height: 1em;
+    object-fit: fill;
+}
+
+.dark {
+    color: white;
+    background-color: var(--ld-bg);
+}
+
+.light {
+    color: var(--lm-text);
+    background-color: var(--lm-bg);
+}
+
+.dark-bg {
+
+    background-color: var(--ld-bg-content);
+}
+
+.light-bg {
+    background-color: white;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    padding-left: 1em;
+    height: max-content;
+    cursor: -moz-zoom-in;
+    outline: none;
+    font-size: 1rem;
+
+    font-family: 'Space Mono', monospace;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 8fr;
+
+    }
+
+    .container__social {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+    .container__bottom {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        display: grid;
+        grid-template-rows: 1fr 1fr 0.7fr 2fr;
+    }
+    
+.user {
+    gap: 1em;
+
+}
+}
