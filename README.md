@@ -25,5 +25,5 @@ Dark Mode            |  Light-Mode
 - CSS Grid
 - Responsive
 - API
+- Dark/Light Mode
 
--Dark/Light Mode
