@@ -21,9 +21,10 @@ Dark Mode            |  Light-Mode
 ### Built with!
 - Semantic HTML5 markup
 - CSS custom properties
+- JavaScript
 - Flexbox
 - CSS Grid
 - Responsive
-- API
+- API (fetch)
 - Dark/Light Mode
 
